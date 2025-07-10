@@ -54,16 +54,67 @@ nav {
   .card {
     flex-grow: 0; /* No horizontal growth on mobile */
   }
+  .attractive-list {
+    padding-left: 0.5em;
+  }
+  .attractive-list .list-row {
+    padding: 0.1em 0;
+    font-size: 1em;
+  }
+  .mockup-window {
+    margin-bottom: 0.5em;
+  }
+  .block.place-content-start {
+    margin: 0.5em 0.2em;
+  }
 }
 
 /* Override inline code font */
 code {
   font-family: "BrassMono", monospace !important;
-  /* Optional: Adjust size, color, etc. */
-  font-size: 0.9em; 
-  /* background-color: hsl(var(--n) / 0.2); /* DaisyUI neutral color 
-  padding: 0.2em 0.4em;
-  border-radius: var(--rounded-badge, 0.2em); */
+  font-size: 0.95em;
+  padding: 0.1em 0.3em;
+  border-radius: 0.2em;
+  background: hsl(var(--b2, 0) / 0.08); /* subtle background, DaisyUI var fallback */
+  vertical-align: baseline;
+}
+
+.list-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5em;
+}
+
+.list-row code {
+  margin: 0;
+  /* Remove any extra left/right spacing */
+}
+ul.attractive-list {
+  padding-left: 1.2em;
+  margin: 0;
+}
+
+.attractive-list {
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+.attractive-list .list-row {
+  margin: 0;
+  padding: 0.3em 0;
+  border-bottom: 1px solid hsl(var(--b2, 0) / 0.08);
+  line-height: 1.4;
+  transition: background 0.2s;
+  border-radius: 0.3em;
+  margin-bottom: 0.1em;
+}
+
+.attractive-list .list-row:last-child {
+  border-bottom: none;
+}
+
+.attractive-list .list-row:hover {
+  background: hsl(var(--b2, 0) / 0.08);
 }
 
 .f-container{display:flex;}
@@ -77,4 +128,39 @@ code {
 }
 .Baloo2BoldFont{
   font-family: "Baloo2Bold", sans-serif;
+}
+
+/* Improve list styling inside tables */
+td ul, td ol {
+  margin: 0.2em 0 0.2em 1.2em;
+  padding-left: 1.2em;
+  list-style-position: inside;
+}
+td li {
+  white-space: normal;
+  margin: 0.1em 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+/* Utility: compact attractive list for tables */
+.compact-list, .attractive-list {
+  list-style-type: decimal;
+  list-style-position: inside;
+  margin: 0.2em 0 0.2em 1.2em;
+  padding-left: 1.2em;
+}
+.compact-list li, .attractive-list .list-row, .attractive-list li {
+  display: list-item;
+  padding: 0.1em 0;
+  margin: 0;
+  border: none;
+  background: none;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+/* Prevent awkward breaks in numbered lists */
+ol, ul {
+  overflow-wrap: anywhere;
 }
