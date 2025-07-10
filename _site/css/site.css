@@ -164,3 +164,10 @@ td li {
 ol, ul {
   overflow-wrap: anywhere;
 }
+
+/* Style ordered list numbers with DaisyUI accent color (fix for .list-row) */
+.attractive-list > .list-row::marker,
+.attractive-list li::marker {
+  color: var(--a, #ea580c); /* DaisyUI accent variable, fallback to orange-600 */
+  font-weight: bold;
+}
