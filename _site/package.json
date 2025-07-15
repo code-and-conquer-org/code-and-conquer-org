@@ -1,14 +1,10 @@
 {
   "name": "codeandconquer-jekyll-tailwind",
   "version": "1.0.0",
-  "description": "Jekyll site with Tailwind CSS and DaisyUI, built via Docker.",
-  "scripts": {
-    "build:css": "tailwindcss -i ./css/input.css -o ./tailwind.css --minify"
-  },
   "devDependencies": {
-    "tailwindcss": "^3.4.1",
-    "daisyui": "^5.0.0",
-    "postcss": "^8.4.38",
-    "autoprefixer": "^10.4.19"
+    "autoprefixer": "^10.4.21",
+    "daisyui": "^5.0.46",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11"
   }
 }

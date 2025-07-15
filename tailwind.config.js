@@ -5,7 +5,8 @@ module.exports = {
     "./_layouts/**/*.{html,liquid,md,js}",
     "./_posts/**/*.{html,liquid,md,js}",
     "./*.{html,liquid,md,js}",
-    "./css/**/*.{css,scss}"
+    "./css/**/*.{css,scss}",
+    "./page/**/*.{html,liquid,md,js}"
   ],
   plugins: [require('daisyui')],
   daisyui: {
