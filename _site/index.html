@@ -19,7 +19,7 @@
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@Ms Aziz & Mr Mulla" />
 <script type="application/ld+json">
-{"url":"http://0.0.0.0:4000/","name":"CODEANDCONQUER.org","@type":"WebSite","author":{"@type":"Person","name":"Ms Aziz & Mr Mulla"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://0.0.0.0:4000/assets/images/c&c_logo.png"},"name":"Ms Aziz & Mr Mulla"},"description":"Learn OCR A Level Computer Science with Ms Aziz &amp; Mr Mulla","headline":"CODEANDCONQUER.org","@context":"https://schema.org"}</script>
+{"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://0.0.0.0:4000/assets/images/c&c_logo.png"},"name":"Ms Aziz & Mr Mulla"},"url":"http://0.0.0.0:4000/","author":{"@type":"Person","name":"Ms Aziz & Mr Mulla"},"@type":"WebSite","headline":"CODEANDCONQUER.org","description":"Learn OCR A Level Computer Science with Ms Aziz &amp; Mr Mulla","name":"CODEANDCONQUER.org","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
@@ -27,6 +27,8 @@
   
     <link rel="stylesheet" href="/assets/css/tailwind.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="/css/site.css">
     <script src="/js/color-scheme.js" data-website-url="http://0.0.0.0:4000" async></script>
     
@@ -108,7 +110,7 @@
     </div>
     <a href="/" aria-current="page" aria-label="Homepage" class="flex-0 btn btn-ghost px-2" data-svelte-h="svelte-nce89e">
       <div class="btn btn-ghost btn-circle avatar">
-        <div class="w-10 rounded-full"> <!-- Increased from w-32 to w-48 -->
+        <div class="rounded-full"> <!-- Increased from w-32 to w-48 -->
           <img src="/assets/images/c&c_logo.png" class="w-full h-auto" alt="logo"> <!-- Use w-full and h-auto for responsive scaling -->
         </div>
       </div>
@@ -208,16 +210,14 @@
 
     <section class="container mx-auto px-4 md:container md:mx-auto">
       <div class="hero bg-base-200 min-h-screen">
-  <div class="hero-content flex flex-col-reverse items-center justify-center gap-6 lg:flex-row w-full max-w-5xl mx-auto px-4 py-8">
-    <div class="w-full lg:w-1/2 text-center lg:text-left">
-      <h1 class="text-3xl sm:text-4xl md:text-5xl Baloo2BoldFont">
-        Learn A-Level CS with Ms Aziz &amp; Mr Mulla
-      </h1>
+  <div class="hero-content flex flex-col-reverse items-center justify-center gap-6 lg:flex-row lg:items-center lg:justify-between w-full max-w-5xl mx-auto px-4 py-8">
+    <div class="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl Baloo2BoldFont">Learn A-Level CS with Ms Aziz &amp; Mr Mulla</h1>
       <p class="py-4 sm:py-6 text-base sm:text-lg">
         While we are currently a work in progress, we are rapidly adding videos and content.
       </p>
     </div>
-    <div class="w-full lg:w-1/2 flex justify-center lg:justify-end">
+    <div class="w-full lg:w-1/2 flex justify-center lg:justify-end mb-4 lg:mb-0">
       <img
         src="/assets/images/c&c_logo.png"
         class="w-40 sm:w-56 md:w-72 max-w-full rounded-lg shadow-2xl"
@@ -226,7 +226,6 @@
     </div>
   </div>
 </div>
-
     </section>
 
     <script>
