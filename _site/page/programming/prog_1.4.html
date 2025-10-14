@@ -30,7 +30,9 @@
     <script src="/js/color-scheme.js" data-website-url="http://0.0.0.0:4000" async></script>
     
     <link rel="stylesheet" href="/css/hilightjs.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="/js/theme-switcher.js" defer></script>
+        
   </head>
   <body>
     <nav>
@@ -293,17 +295,6 @@
     </script>
     
   </body>
-  <script>    
-    function handleThemeChange() {
-      const newScheme = themeController.checked ? 'dark' : 'emerald';
-      setColorScheme(newScheme);
-      console.log("1 .handleThemeChange called from default HTML");
-    }
-
-    document.addEventListener("DOMContentLoaded", function() {
-    const themeController = document.querySelector('.theme-controller');
-    themeController.addEventListener('change', handleThemeChange);
-    });
-  </script>
+  
   
 </html>

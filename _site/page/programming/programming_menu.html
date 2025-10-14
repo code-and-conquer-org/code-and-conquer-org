@@ -30,7 +30,9 @@
     <script src="/js/color-scheme.js" data-website-url="http://0.0.0.0:4000" async></script>
     
     <link rel="stylesheet" href="/css/hilightjs.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="/js/theme-switcher.js" defer></script>
+        
   </head>
   <body>
     <nav>
@@ -270,29 +272,33 @@
                 <li>Lesson 7️⃣ <a class="link link-secondary" href="/page/programming/prog_1.7.html">Lists, Arrays & List Methods</a></li>
 
                 <div class="divider">Subroutines</div>
-                <li>Lesson TBC </li>
+                <li>Lesson 8️⃣.1️⃣ <a class="link link-secondary" href="/page/programming/prog_1.8.1.html">Defining Functions</a></li>
+                <li>Lesson 8️⃣.2️⃣ <a class="link link-secondary" href="/page/programming/prog_1.8.2.html">Functions & maintainance</a></li>
+                <li>Lesson 8️⃣.3️⃣ <a class="link link-secondary" href="/page/programming/prog_1.8.3.html">Passing Parameters as Reference/Value</a></li>
 
                 <div class="divider">File Management</div>
-                <li>Lesson TBC </li>
+                <li>Lesson 9️⃣ <a class="link link-secondary" href="/page/programming/prog_1.9.html">File Handling</a></li>
             </ul>
             
         </td>
       </tr>
       <!-- row 2 -->
       <tr>
-        <th class="w-1/4 align-top break-words">--</th>
+        <th class="w-1/4 align-top break-words">More Python Skills</th>
         <td class="w-3/4 align-top">
             <ul>
-                <li></li>
+                <li>Lesson 1️⃣ <a class="link link-secondary" href="/page/programming/prog_2.1.html">Dictionaries</a></li>
             </ul>
         </td>
       </tr>
       <!-- row 3 -->
       <tr>
-        <th class="w-1/4 align-top break-words">--</th>
+        <th class="w-1/4 align-top break-words">Object Oriented Programming (OOP)</th>
         <td class="w-3/4 align-top">
             <ul>
-                <li></li>
+                <li>Lesson 1️⃣ <a class="link link-secondary" href="/page/programming/prog_3.1.html">Classes & Objects</a></li>
+                <li>Lesson 2️⃣ <a class="link link-secondary" href="/page/programming/prog_3.2.html">Inheritance</a></li>
+                <li>Lesson 3️⃣ <a class="link link-secondary" href="/page/programming/prog_3.3.html">Encapsulation & Polymorphism</a></li>
             </ul>
         </td>
       </tr>
@@ -344,17 +350,6 @@
     </script>
     
   </body>
-  <script>    
-    function handleThemeChange() {
-      const newScheme = themeController.checked ? 'dark' : 'emerald';
-      setColorScheme(newScheme);
-      console.log("1 .handleThemeChange called from default HTML");
-    }
-
-    document.addEventListener("DOMContentLoaded", function() {
-    const themeController = document.querySelector('.theme-controller');
-    themeController.addEventListener('change', handleThemeChange);
-    });
-  </script>
+  
   
 </html>
